@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Paintball Peñuelas - Podras vivir la mejor experiencia en nuestro campo!
+    </title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Readex+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="340"
+    class="scrollspy-example"
+    tabindex="0"
+  >
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <div class="container-fluid d-flex justify-content-evenly w-100 h-100">
+        <a class="navbar-brand" href="#">
+          <img src="/img/header/icon.webp" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex gap-4">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#technicalInformation" class="nav-link"
+                >Informacion Tecnica</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#businessInformation" class="nav-link"
+                >Informacion de Empresa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimony" class="nav-link">Opiniones</a>
+            </li>
+            <li class="nav-item d-none nav_item_contact">
+              <div class="d-flex btn_contact">
+                <a href="#" class="nav_btn__contact">Contactanos</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex btn_contact contactContainer">
+          <a href="#" class="nav_btn__contact">Contactanos</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <div
+      id="carouselControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-pause="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselControls"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselControls"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselControls"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" id="home">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="/img/header/slide1.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5
+              class="caption__title"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+            >
+              ¡Disfruta de Paintball en <span>La Serena!</span>
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/img/header/slide2.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5
+              class="caption__title"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+            >
+              ¡Disfruta de Paintball en <span>La Serena!</span>
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/img/header/slide3.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5
+              class="caption__title"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+            >
+              ¡Disfruta de Paintball en <span>La Serena!</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button">
+        <span
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+          data-bs-target="#carouselControls"
+          data-bs-slide="prev"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button">
+        <span
+          class="carousel-control-next-icon"
+          aria-hidden="true"
+          data-bs-target="#carouselControls"
+          data-bs-slide="next"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Technical Information -->
+    <div class="container mt-5 mb-5" id="technicalInformation">
+      <h1 class="container__title" data-aos="fade-up">INFORMACION TECNICA</h1>
+      <h2 class="container__subtitle" data-aos="fade-up">
+        Ubicados en Pueblito Peñuelas
+      </h2>
+      <div
+        class="
+          d-md-flex
+          justify-content-between
+          mt-5
+          technicalInformation__Content
+        "
+      >
+        <div
+          class="grid-margin d-flex justify-content-start"
+          data-aos="fade-right"
+        >
+          <div class="technicalContainer">
+            <img src="/img/svg/3163730.svg" alt="" srcset="" />
+            <p class="mt-2">Comida y Descanso</p>
+            <span>Comida, descanso y otros a un lado del local</span>
+          </div>
+        </div>
+        <div
+          class="grid-margin d-flex justify-content-center"
+          data-aos="fade-right"
+        >
+          <div class="technicalContainer">
+            <img src="/img/svg/3547823.svg" alt="" srcset="" />
+            <p class="mt-2">Seguridad</p>
+            <span>Cancha completamente completamente segura</span>
+          </div>
+        </div>
+        <div
+          class="grid-margin d-flex justify-content-end"
+          data-aos="fade-right"
+        >
+          <div class="technicalContainer">
+            <img src="/img/svg/1901531.svg" alt="" srcset="" />
+            <p class="mt-2">Sumergete a la batalla</p>
+            <span>¡Capacidad para 30 jugadores y más!</span>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col">
+          <div class="img__technical" data-aos="zoom-in">
+            <img src="/img/technical/1.webp" alt="Airsoft" srcset="" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="img__technical" data-aos="zoom-in">
+            <img src="/img/technical/2.webp" alt="Airsoft" srcset="" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="img__technical" data-aos="zoom-in">
+            <img src="/img/technical/3.webp" alt="Airsoft" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Business Information -->
+    <div class="container-fluid pb-5 pt-5 mx-0 px-5" id="businessInformation">
+      <h1 class="container__title" data-aos="fade-up">Nosotros</h1>
+      <h2 class="container__subtitle" data-aos="fade-up">
+        ¡Vive la experiencia del paintball en La Serena!
+      </h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center">
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-business" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">Experiencia</h5>
+              <p class="card-text">
+                Disfruta de una cancha de combate cercano completamente segura!
+                y disfruta de todos los servicios que tenemos para ti junto a
+                Pueblito Peñuelas!.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-business" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">Horarios de atencion</h5>
+              <p class="card-text">
+                Horarios de atención: 11:00 a 23:00 hrs Miércoles a domingo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-business" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">Horarios Extraordinarios</h5>
+              <p class="card-text">
+                Los horarios extraordinarios se deben negociar con al menos tres
+                días de anticipación.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-business" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">Reservas</h5>
+              <p class="card-text">
+                Reserva a través de cualquiera de nuestros medios!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div class="container mt-5 mb-5" id="services">
+      <h1 class="container__title" data-aos="fade-up">Servicios</h1>
+      <h2 class="container__subtitle" data-aos="fade-up">
+        ¡Paintball para público general!
+      </h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center">
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-services" data-aos="flip-down">
+            <div class="card-img position-relative">
+              <img src="/img/technical/1.webp" alt="Airsoft" srcset="" />
+            </div>
+            <div class="card-body position-absolute w-100 h-100">
+              <h5 class="card-title">
+                Arriendo de cancha para eventos especiales
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-services" data-aos="flip-down">
+            <div class="card-img position-relative">
+              <img src="/img/header/slide1.webp" alt="Airsoft" srcset="" />
+            </div>
+            <div class="card-body position-absolute w-100 h-100">
+              <h5 class="card-title">Jornadas extraordinarias de juego</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-services" data-aos="flip-down">
+            <div class="card-img position-relative">
+              <img src="/img/header/slide2.webp" alt="Airsoft" srcset="" />
+            </div>
+            <div class="card-body position-absolute w-100 h-100">
+              <h5 class="card-title">Torneos y Campeonatos</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-services" data-aos="flip-down">
+            <div class="card-img position-relative">
+              <img src="/img/header/slide3.webp" alt="Airsoft" srcset="" />
+            </div>
+            <div class="card-body position-absolute w-100 h-100">
+              <h5 class="card-title">Equipo multidisciplinario</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div class="container mt-5 mb-5" id="gallery">
+      <h1 class="container__title" data-aos="fade-up">Galeria</h1>
+      <h2 class="container__subtitle" data-aos="fade-up">
+        Fotos de nuestro campo de batalla
+      </h2>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="/img/header/slide1.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+
+          <img
+            src="/img/header/slide2.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="/img/technical/2.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+
+          <img
+            src="/img/technical/1.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="/img/header/slide3.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+
+          <img
+            src="/img/technical/3.webp"
+            class="w-100 shadow-1-strong rounded mb-4 imgModal"
+            alt="Paintball img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div
+      class="container mb-5 mt-5 position-relative gtco-testimonials"
+      id="testimony"
+    >
+      <h1 class="container__title" data-aos="fade-up">Opiniones</h1>
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Ronne Galle <br />
+                <span> Project Manager </span>
+              </h5>
+              <p class="card-text">
+                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat ”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Missy Limana<br />
+                <span> Engineer </span>
+              </h5>
+              <p class="card-text">
+                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat ”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Martha Brown<br />
+                <span> Project Manager </span>
+              </h5>
+              <p class="card-text">
+                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat ”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>
+                Hanna Lisem<br />
+                <span> Project Manager </span>
+              </h5>
+              <p class="card-text">
+                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat ”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Image -->
+    <div
+        class="modal fade"
+        id="galleryModal"
+        tabindex="-1"
+        aria-labelledby="galleryModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+              <img class="modal-img" alt="imagen click"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Personal Script -->
+    <script src="/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
