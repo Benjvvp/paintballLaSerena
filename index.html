@@ -31,6 +31,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body
     data-bs-spy="scroll"
@@ -479,6 +481,81 @@
         </div>
       </div>
     </div>
+    <!-- Footer -->
+
+  <!-- Section: Links  -->
+  <section class="mt-2 border-top">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Redes Sociales
+          </h6>
+          <a href="https://www.facebook.com/Paintball-Pueblito-Pe%C3%B1uelas-104118858665819" class="me-4 text-reset socialsLink">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/paintball_pblto_penuelas/" class="me-4 text-reset socialsLink">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Secciones
+          </h6>
+          <p>
+            <a href="#home" class="text-reset linkFooter">Home</a>
+          </p>
+          <p>
+            <a href="#technicalInformation" class="text-reset linkFooter">Informacion Tecnica</a>
+          </p>
+          <p>
+            <a href="#businessInformation" class="text-reset linkFooter">Informacion de Empresa</a>
+          </p>
+          <p>
+            <a href="#services" class="text-reset linkFooter">Servicios</a>
+          </p>
+          <p>
+            <a href="#gallery" class="text-reset linkFooter">Galeria</a>
+          </p>
+          <p>
+            <a href="#testimony" class="text-reset linkFooter">Opiniones</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contactanos
+          </h6>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            pueblitopenuelaspaintball@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 56 9 3183 4584</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 copyrightContainer">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="/">pueblitopenuelaspaintball.cl</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
     <!-- Modal Image -->
     <div
         class="modal fade"
@@ -494,6 +571,46 @@
             </div>
           </div>
         </div>
+      </div>
+    
+      <!-- Modal Form -->
+      <div
+        class="modal fade"
+        id="formModal"
+        tabindex="-1"
+        aria-labelledby="formModal"
+        aria-hidden="true"
+      >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-body formModalContainer p-0">
+            <h1 class="formModalTitle">Contactanos</h1>
+            <form class="formModal needs-validation" autocomplete="off" novalidate>
+              <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <input type="text" class="form-control" placeholder="Nombre" required id="nameInput" name="nameInput">
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <input type="text" class="form-control" placeholder="Apellidos" required name="lastnameInput">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPhone">Telefono</label>
+                <input type="text" class="form-control" id="inputPhone" aria-describedby="emailHelp" placeholder="Ingresa tu telefono" required name="phoneInput">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Correo</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Ingresa tu correo" required name="emailInput">
+              </div>
+              <div class="form-group">
+                <label for="messageTextArea">Mensaje</label>
+                <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Ingresa tu mensaje." required name="messageInput"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btnFormModal">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
       </div>
     <!-- JQuery-->
     <script

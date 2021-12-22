@@ -13,7 +13,7 @@ body{
   position: fixed;
   top: -10vh;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   animation: fadeInNav 0.5s ease forwards;
 }
@@ -88,7 +88,7 @@ body{
 }
 .nav_btn__contact:hover {
   color: white;
-  background-color: #138496;
+  background-color: rgb(170, 0, 0);
   border-color: red;
 }
 
@@ -391,6 +391,38 @@ body{
   outline: 0;
 }
 
+/* Footer */
+.socialsLink{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1em;
+  transition: all 0.3s ease;
+}
+.socialsLink:hover{
+  color: #fff !important;
+  background: red;
+}
+.linkFooter{
+  transition: all .5s ease;
+}
+.linkFooter:hover{
+  color: red !important;
+}
+.copyrightContainer a{
+  transition: color .5s ease;
+}
+.copyrightContainer a:hover{
+  color: rgb(170, 0, 0) !important;
+}
 /* Modal Img */
 .modal-img{
   width: 100%;
@@ -402,6 +434,65 @@ body{
   background-color: rgba(0,0,0, 0.5) !important;
 }
 
+/* Form Modal */
+.formModalContainer{
+  margin: 3em 5em;
+  padding: 3em;
+}
+.formModalTitle{
+  font-family: 'Readex pro', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.form-control{
+  border: 1px solid red;
+  border-radius: 2px;
+  background: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.05);
+}
+.form-control:focus{
+  background: none;
+  color: #fff;
+  border: 1px solid red;
+  box-shadow: none;
+}
+.form-control:-webkit-autofill {
+  background: none !important;
+  -webkit-box-shadow: none !important; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+.form-control:-webkit-autofill:focus {
+  background: none !important;
+  -webkit-box-shadow: none !important;/*your box-shadow*/
+  -webkit-text-fill-color: #333;
+} 
+#messageTextArea{
+  resize: none !important;
+}
+.btnFormModal{
+  background: red;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.2em 2em;
+  margin-top: 1em;
+  transition: all .5s ease;
+}
+.btnFormModal:hover{
+  background: rgb(170, 0, 0);
+}
+.btnFormModal:focus{
+  background: rgb(170, 0, 0);
+
+}
 /* Animations */
 
 @keyframes expandImg {
@@ -512,14 +603,30 @@ body{
   .nav_item_contact{
     height: 2.5em;
   }
+  .formModalTitle{
+    font-size: 2em;
+  }
+  .formModalContainer{
+    text-align: center;
+  }
+  #nameInput{
+    margin-bottom: 22px;
+  }
 }
 @media (max-width: 375px) {
   .card-business{
     height: 24em !important; 
   }
+  .formModalTitle{
+    font-size: 1.5em;
+  }
+  
 }
 @media (max-width: 320px){
   .card-business{
     height: 24em !important; 
+  }
+  .formModalTitle{
+    font-size: 1.1em;
   }
 }
