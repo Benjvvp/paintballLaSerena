@@ -5,13 +5,13 @@ body{
 }
 .navbar {
   background-color: #333333;
-  height: 10vh;
+  height: 12vh;
   transition: all 0.5s ease;
   padding: 0;
 }
 .navbar-fixed {
   position: fixed;
-  top: -10vh;
+  top: -12vh;
   width: 100%;
   z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -42,7 +42,9 @@ body{
   text-shadow: none;
 }
 .navbar-brand img {
-  width: 10vh;
+  height: 100%;
+  width: 11vh;
+  padding: .1em;
 }
 .navbar-text {
   color: white;
@@ -56,7 +58,7 @@ body{
 .navbar-collapse.collapsing {
   z-index: 9;
   position: absolute;
-  top: 11vw;
+  top: 13vw;
   left: 0;
   width: 100%;
   background-color: #333333;
@@ -64,7 +66,7 @@ body{
 }
 .navbar-collapse.show {
   position: absolute;
-  top: 11vw;
+  top: 13vw;
   right: 0 !important;
   background-color: #333333;
   z-index: 9;
@@ -595,10 +597,10 @@ body{
     height: 18em;
   }
   .navbar-collapse.collapsing{
-    margin-top: 2.3em;
+    margin-top: 3.8em;
   }
   .navbar-collapse.show{
-    margin-top: 2.3em;
+    margin-top: 3.8em;
   }
   .nav_item_contact{
     height: 2.5em;
