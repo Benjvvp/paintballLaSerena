@@ -8,6 +8,23 @@ $(document).ready(function () {
       navbar.removeClass("navbar-fixed");
     }
   });
+
+  //Bootstrap success alert
+  let success = new URL(window.location.href).searchParams.get("success");
+  if(success == null) return;
+  if(success == "true"){
+    //Bootstrap alert
+    let alert = document.getElementById("alert");
+    alert.classList.add("alert-success");
+    alert.classList.add('show');
+    alert.innerHTML = "Tu mensaje se a enviado correctamente. <button type='button' class='btn-close' data-bs-dismiss='alert'aria-label='Close'></button>";
+  }
+  if(success == "false"){
+    let alert = document.getElementById("alert");
+    alert.classList.add("alert-danger");
+    alert.classList.add('show');
+    alert.innerHTML = "Tu mensaje no se a enviado, intenta nuevamente. <button type='button' class='btn-close' data-bs-dismiss='alert'aria-label='Close'></button>";
+  }
 });
 // Carousel Testimony
 (function () {

@@ -6,6 +6,14 @@ body{
   scroll-margin: 0;
   position: relative;
 }
+.alertBootstrap{
+  position: absolute !important;
+  z-index: 9;
+  top: 14vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50% !important;
+}
 .navbar {
   background-color: #333333;
   height: 12vh;
