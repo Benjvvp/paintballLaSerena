@@ -597,6 +597,9 @@ body{
   top: 20%;
   translate: translateX(-50%);
 }
+.carouselItemFrequent div img{
+  animation: none !important;
+}
 /* Animations */
 
 @keyframes expandImg {
