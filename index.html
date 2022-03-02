@@ -1,491 +1,528 @@
 <!DOCTYPE html>
 <html lang="es-CL">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Paintball Peñuelas - Podras vivir la mejor experiencia en nuestro campo!
-    </title>
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Readex+Pro:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Owl Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#navbar"
-    data-bs-offset="340"
-    class="scrollspy-example"
-    tabindex="0"
-  >
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-      <div class="container-fluid d-flex justify-content-evenly w-100 h-100">
-        <a class="navbar-brand" href="#">
-          <img src="img/icons/logocolorido.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav d-flex gap-4">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#technicalInformation" class="nav-link"
-                >Informacion Tecnica</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#businessInformation" class="nav-link"
-                >Informacion de Empresa</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a href="#gallery" class="nav-link">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimony" class="nav-link">Opiniones</a>
-            </li>
-            <li class="nav-item d-none nav_item_contact">
-              <div class="d-flex btn_contact">
-                <a href="#" class="nav_btn__contact">Contactanos</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex btn_contact contactContainer">
-          <a href="#" class="nav_btn__contact">Contactanos</a>
-        </div>
-      </div>
-    </nav>
-    <!-- Alert Bootstrap -->
-    <div class="alert alert-dismissible fade alertBootstrap" role="alert" id="alert">
-      
-    </div>
-    <!-- Carousel -->
-    <div
-      id="carouselControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-pause="false"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselControls"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselControls"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselControls"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner" id="home">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img src="img/header/slide1.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5
-              class="caption__title"
-              data-aos="fade-up"
-              data-aos-easing="ease-out"
-            >
-              ¡Disfruta de Paintball en <span>La Serena!</span>
-            </h5>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="img/header/slide2.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5
-              class="caption__title"
-              data-aos="fade-up"
-              data-aos-easing="ease-out"
-            >
-              ¡Disfruta de Paintball en <span>La Serena!</span>
-            </h5>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="img/header/slide3.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5
-              class="caption__title"
-              data-aos="fade-up"
-              data-aos-easing="ease-out"
-            >
-              ¡Disfruta de Paintball en <span>La Serena!</span>
-            </h5>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button">
-        <span
-          class="carousel-control-prev-icon"
-          aria-hidden="true"
-          data-bs-target="#carouselControls"
-          data-bs-slide="prev"
-        ></span>
-        <span class="visually-hidden">Previous</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Paintball Peñuelas - Podras vivir la mejor experiencia en nuestro campo!
+  </title>
+  <meta name="og:title" content="Paintball Peñuelas - Podras vivir la mejor experiencia en nuestro campo!" />
+  <meta name="og:description" content="Encuentra toda la diversión que buscas en Paintball Pueblito Peñuelas!! Además tendrás acceso a locales de comida, artesanos, juegos inflables y más!. ¡Te esperamos!" />
+  <meta name="og:image" content="img/logo.png" />
+  <meta name="og:url" content="http://www.paintballpeñuelas.cl" />
+  <meta name="og:type" content="website" />
+  <meta name="og:locale" content="es_CL" />
+  <meta name="og:site_name" content="Paintball Peñuelas" />
+  <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Readex+Pro:wght@700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="340" class="scrollspy-example" tabindex="0">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid d-flex justify-content-evenly w-100 h-100">
+      <a class="navbar-brand" href="#">
+        <img src="img/icons/logocolorido.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button">
-        <span
-          class="carousel-control-next-icon"
-          aria-hidden="true"
-          data-bs-target="#carouselControls"
-          data-bs-slide="next"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex gap-4">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#technicalInformation" class="nav-link">Informacion</a>
+          </li>
+          <li class="nav-item">
+            <a href="#businessInformation" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="#frequent" class="nav-link">Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item d-none nav_item_contact">
+            <div class="d-flex btn_contact">
+              <a href="#" class="nav_btn__contact">Contactanos</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex btn_contact contactContainer">
+        <a href="#" class="nav_btn__contact">Contactanos</a>
+      </div>
     </div>
-    <!-- Technical Information -->
-    <div class="container pt-5 pb-5" id="technicalInformation">
-      <h1 class="container__title" data-aos="fade-up">INFORMACION TECNICA</h1>
-      <h2 class="container__subtitle" data-aos="fade-up">
-        Ubicados en Pueblito Peñuelas
-      </h2>
-      <div
-        class="
-          d-md-flex
-          justify-content-between
-          mt-5
+  </nav>
+  <!-- Alert Bootstrap -->
+  <div class="alert alert-dismissible fade alertBootstrap" role="alert" id="alert">
+
+  </div>
+  <!-- Carousel -->
+  <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" id="home">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="img/header/slide1.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption captionBanner d-none d-md-block">
+          <h5 class="caption__title" data-aos="fade-up" data-aos-easing="ease-out">
+            ¡Disfruta de Paintball en <span>La Serena!</span>
+          </h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="img/header/slide2.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption captionBanner d-none d-md-block">
+          <h5 class="caption__title" data-aos="fade-up" data-aos-easing="ease-out">
+            ¡Disfruta de Paintball en <span>La Serena!</span>
+          </h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="img/header/slide3.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption captionBanner d-none d-md-block">
+          <h5 class="caption__title" data-aos="fade-up" data-aos-easing="ease-out">
+            ¡Disfruta de Paintball en <span>La Serena!</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button">
+      <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#carouselControls"
+        data-bs-slide="prev"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button">
+      <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#carouselControls"
+        data-bs-slide="next"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Technical Information -->
+  <div class="container pt-5 pb-5" id="technicalInformation">
+    <h1 class="container__title" data-aos="fade-up">INFORMACION</h1>
+    <h2 class="container__subtitle" data-aos="fade-up">
+      Ubicados en Pueblito Peñuelas
+    </h2>
+    <div class="
+          row row-cols-1 row-cols-md-3 g-4 mt-5
           technicalInformation__Content
-        "
-      >
-        <div
-          class="grid-margin d-flex justify-content-start"
-          data-aos="fade-right"
-        >
-          <div class="technicalContainer">
-            <img src="img/svg/3163730.svg" alt="" srcset="" />
-            <p class="mt-2">Comida y Descanso</p>
-            <span>Comida, descanso y otros a un lado del local</span>
-          </div>
+        ">
+      <div class="d-flex justify-content-center col" data-aos="fade-right">
+        <div class="technicalContainer text-center">
+          <img src="img/svg/3163730.svg" alt="" srcset="" />
+          <p class="mt-2">Comida y Descanso</p>
+          <span>Contamos con amplio sector de descanso,
+            donde podráscompartir y disfrutar con tus
+            camaradas.
+            Además dentro de Pueblito Peñuelas, podrás
+            encontrar diferentes locales de comida
+          </span>
         </div>
-        <div
-          class="grid-margin d-flex justify-content-center"
-          data-aos="fade-right"
-        >
-          <div class="technicalContainer">
-            <img src="img/svg/3547823.svg" alt="" srcset="" />
-            <p class="mt-2">Seguridad</p>
-            <span>Cancha completamente completamente segura</span>
-          </div>
+      </div>
+      <div class="d-flex justify-content-center col" data-aos="fade-right">
+        <div class="technicalContainer text-center">
+          <img src="img/svg/3547823.svg" alt="" srcset="" />
+          <p class="mt-2">Seguridad</p>
+          <span>Actualmente contamos con un exhaustivo
+            proceso de limpieza y de sanitización de
+            nuestro establecimiento para el bienestar de
+            nuestro personal como de los clientes
+            Además Contamos con todas medidas de
+            seguridad exigidas en nuestra cancha</span>
         </div>
-        <div
-          class="grid-margin d-flex justify-content-end"
-          data-aos="fade-right"
-        >
-          <div class="technicalContainer">
-            <img src="img/svg/1901531.svg" alt="" srcset="" />
-            <p class="mt-2">Sumergete a la batalla</p>
-            <span>¡Capacidad para 30 jugadores y más!</span>
+      </div>
+      <div class="d-flex justify-content-center col" data-aos="fade-right">
+        <div class="technicalContainer text-center">
+          <img src="img/svg/1901531.svg" alt="" srcset="" />
+          <p class="mt-2">Sumergete a la batalla</p>
+          <span>Ya no cuentas con más excusas
+            Ven y unete a esta gran eventura!!</span>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+      <div class="col">
+        <div class="img__technical" data-aos="zoom-in">
+          <img src="img/technical/1.webp" alt="Airsoft" srcset="" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="img__technical" data-aos="zoom-in">
+          <img src="img/technical/2.webp" alt="Airsoft" srcset="" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="img__technical" data-aos="zoom-in">
+          <img src="img/technical/3.webp" alt="Airsoft" srcset="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Business Information -->
+  <div class="container-fluid pb-5 pt-5 mx-0 px-5" id="businessInformation">
+    <h1 class="container__title" data-aos="fade-up">Nosotros</h1>
+    <h2 class="container__subtitle" data-aos="fade-up">
+      Acción, adrenalina, diversiíon y por sobre todo seguridad!!
+      <br>
+      ¡Vive la experiencia del Paintball en La Serena!
+    </h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center">
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Experiencia</h5>
+            <p class="card-text">
+              Disfruta de una cancha de combate cercano y completamente cercano!
+              Disfruta de todos los servicios que tenemos para ti junto a
+              Pueblito Peñuelas!
+
+            </p>
           </div>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-        <div class="col">
-          <div class="img__technical" data-aos="zoom-in">
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Ubicación</h5>
+            <p class="card-text">
+              Estamos ubicados en el Pueblito Peñuelas! en Avenida los Pescadores S/n
+              pasado a los estacionamientos
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Horario de Atención</h5>
+            <p class="card-text">
+              Atendemos de Miércoles a Domingo
+              desde las 11:00 am hasta las 23:00 pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 d-none d-md-block"></div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Horarios Extraordinarios</h5>
+            <p class="card-text">
+              Los horarios extraordinarios se deben
+              negociar con al menos tres día de
+              anticipación y previo abono
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Reserva</h5>
+            <p class="card-text">
+              Reserva a través de cualquieres de
+              nuestros medios de comunicación, con al
+              menos un día de anticipación
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-business" data-aos="flip-down">
+          <div class="card-body">
+            <h5 class="card-title">Dudas</h5>
+            <p class="card-text">
+              Si tienes alguna consulta, no dudes en
+              contactarnos o revisa nuestra sección de
+              preguntas frecuentes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <div class="container mt-5 mb-5" id="services">
+    <h1 class="container__title" data-aos="fade-up">Servicios</h1>
+    <p class="services_subtittle">Tenemos tres opciones de entrada por persona que son:</p>
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center ms-3 mt-5">
+      <div class="col-12 col-xl-4 col-lg-6 pb-lg-5 col-md-6">
+        <div class="card card_servicesOptions" data-aos="flip-up">
+          <div class="card-title">
+            Opción A
+          </div>
+          <div class="card-body">
+            <div class="servicesOptionsPrice">
+              <p class="card-text">
+                $ 8.000
+                <br>
+                Por persona
+              </p>
+            </div>
+            <div class="servicesOptionsContent">
+              <p class="fs-4">Incluye:</p>
+              <ul>
+                <li>Equipamiento completo más protecciones</li>
+                <li>Marcadora de aire comprimido</li>
+                <li>100 tiros iniciales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-4 col-lg-6 pb-lg-5 col-md-6">
+        <div class="card card_servicesOptions" data-aos="flip-up">
+          <div class="card-title">
+            Opción A
+          </div>
+          <div class="card-body">
+            <div class="servicesOptionsPrice">
+              <p class="card-text">
+                $ 8.000
+                <br>
+                Por persona
+              </p>
+            </div>
+            <div class="servicesOptionsContent">
+              <p class="fs-4">Incluye:</p>
+              <ul>
+                <li>Equipamiento completo más protecciones</li>
+                <li>Marcadora de aire comprimido</li>
+                <li>100 tiros iniciales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-4 col-lg-6 pb-lg-5 col-md-6">
+        <div class="card card_servicesOptions" data-aos="flip-up">
+          <div class="card-title">
+            Opción A
+          </div>
+          <div class="card-body">
+            <div class="servicesOptionsPrice">
+              <p class="card-text">
+                $ 8.000
+                <br>
+                Por persona
+              </p>
+            </div>
+            <div class="servicesOptionsContent">
+              <p class="fs-4">Incluye:</p>
+              <ul>
+                <li>Equipamiento completo más protecciones</li>
+                <li>Marcadora de aire comprimido</li>
+                <li>100 tiros iniciales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 col-lg-6 pb-lg-5 col-md-6">
+        <div class="card card_servicesOptions card_servicesRecharge" data-aos="flip-up">
+          <div class="card-title">
+            Recargas
+          </div>
+          <div class="card-body">
+            <div class="servicesRechargeOptions">
+              <p>50 Paintballs por $5.000</p>
+              <p>100 Paintballs por $7.000</p>
+              <p>200 Paintballs por $10.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="services_subtittle">Además contamos con servicios adicionales como:</p>
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center ms-md-3">
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-services" data-aos="flip-down">
+          <div class="card-img position-relative">
             <img src="img/technical/1.webp" alt="Airsoft" srcset="" />
           </div>
-        </div>
-        <div class="col">
-          <div class="img__technical" data-aos="zoom-in">
-            <img src="img/technical/2.webp" alt="Airsoft" srcset="" />
+          <div class="card-body position-absolute w-100 h-100">
+            <h5 class="card-title">
+              Arriendo de cancha para eventos especiales
+            </h5>
           </div>
         </div>
-        <div class="col">
-          <div class="img__technical" data-aos="zoom-in">
-            <img src="img/technical/3.webp" alt="Airsoft" srcset="" />
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-services" data-aos="flip-down">
+          <div class="card-img position-relative">
+            <img src="img/header/slide1.webp" alt="Airsoft" srcset="" />
+          </div>
+          <div class="card-body position-absolute w-100 h-100">
+            <h5 class="card-title">Jornadas extraordinarias de juego</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-services" data-aos="flip-down">
+          <div class="card-img position-relative">
+            <img src="img/header/slide2.webp" alt="Airsoft" srcset="" />
+          </div>
+          <div class="card-body position-absolute w-100 h-100">
+            <h5 class="card-title">Torneos y Campeonatos</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
+        <div class="card card-services" data-aos="flip-down">
+          <div class="card-img position-relative">
+            <img src="img/header/slide3.webp" alt="Airsoft" srcset="" />
+          </div>
+          <div class="card-body position-absolute w-100 h-100">
+            <h5 class="card-title">Equipo multidisciplinario</h5>
           </div>
         </div>
       </div>
     </div>
-    <!-- Business Information -->
-    <div class="container-fluid pb-5 pt-5 mx-0 px-5" id="businessInformation">
-      <h1 class="container__title" data-aos="fade-up">Nosotros</h1>
-      <h2 class="container__subtitle" data-aos="fade-up">
-        ¡Vive la experiencia del paintball en La Serena!
-      </h2>
-      <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center">
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-business" data-aos="flip-down">
-            <div class="card-body">
-              <h5 class="card-title">Experiencia</h5>
-              <p class="card-text">
-                Disfruta de una cancha de combate cercano completamente segura!
-                y disfruta de todos los servicios que tenemos para ti junto a
-                Pueblito Peñuelas!.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-business" data-aos="flip-down">
-            <div class="card-body">
-              <h5 class="card-title">Horarios de atencion</h5>
-              <p class="card-text">
-                Horarios de atención: 11:00 a 23:00 hrs Miércoles a domingo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-business" data-aos="flip-down">
-            <div class="card-body">
-              <h5 class="card-title">Horarios Extraordinarios</h5>
-              <p class="card-text">
-                Los horarios extraordinarios se deben negociar con al menos tres
-                días de anticipación.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-business" data-aos="flip-down">
-            <div class="card-body">
-              <h5 class="card-title">Reservas</h5>
-              <p class="card-text">
-                Reserva a través de cualquiera de nuestros medios!
-              </p>
-            </div>
-          </div>
+    <p class="services_footerText">Contactanos si deseas algunos de estos servicios adicionales!</p>
+  </div>
+  <!-- Gallery -->
+  <div class="container pt-5 pb-5" id="gallery">
+    <h1 class="container__title" data-aos="fade-up">Galeria</h1>
+    <h2 class="container__subtitle" data-aos="fade-up">
+      Fotos de nuestro campo de batalla
+    </h2>
+    <div class="row mt-5">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="img/header/slide1.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+
+        <img src="img/header/slide2.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="img/technical/2.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+
+        <img src="img/technical/1.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="img/header/slide3.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+
+        <img src="img/technical/3.webp" class="w-100 shadow-1-strong rounded mb-4 imgModal" alt="Paintball img" />
+      </div>
+    </div>
+  </div>
+  <!-- Banner -->
+  <div class="pb-5 pt-5 position-relative" id="frequent">
+    <div class="carousel-inner carouselItemFrequent" id="home">
+      <div class="carousel-item active">
+        <img src="img/header/slide1.webp" class="d-block w-100" alt="..." />
+        <div class="carousel-caption carousel-captionFrequent d-block">
+          <h5 class="caption__title" data-aos="fade-up" data-aos-easing="ease-out">
+            Preguntas Frecuentes
+          </h5>
         </div>
       </div>
     </div>
-    <!-- Services -->
-    <div class="container mt-5 mb-5" id="services">
-      <h1 class="container__title" data-aos="fade-up">Servicios</h1>
-      <h2 class="container__subtitle" data-aos="fade-up">
-        ¡Paintball para público general!
-      </h2>
-      <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 justify-content-center">
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-services" data-aos="flip-down">
-            <div class="card-img position-relative">
-              <img src="img/technical/1.webp" alt="Airsoft" srcset="" />
-            </div>
-            <div class="card-body position-absolute w-100 h-100">
-              <h5 class="card-title">
-                Arriendo de cancha para eventos especiales
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-services" data-aos="flip-down">
-            <div class="card-img position-relative">
-              <img src="img/header/slide1.webp" alt="Airsoft" srcset="" />
-            </div>
-            <div class="card-body position-absolute w-100 h-100">
-              <h5 class="card-title">Jornadas extraordinarias de juego</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-services" data-aos="flip-down">
-            <div class="card-img position-relative">
-              <img src="img/header/slide2.webp" alt="Airsoft" srcset="" />
-            </div>
-            <div class="card-body position-absolute w-100 h-100">
-              <h5 class="card-title">Torneos y Campeonatos</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-3 col-lg-5 pb-lg-5 col-md-6">
-          <div class="card card-services" data-aos="flip-down">
-            <div class="card-img position-relative">
-              <img src="img/header/slide3.webp" alt="Airsoft" srcset="" />
-            </div>
-            <div class="card-body position-absolute w-100 h-100">
-              <h5 class="card-title">Equipo multidisciplinario</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Gallery -->
-    <div class="container pt-5 pb-5" id="gallery">
-      <h1 class="container__title" data-aos="fade-up">Galeria</h1>
-      <h2 class="container__subtitle" data-aos="fade-up">
-        Fotos de nuestro campo de batalla
-      </h2>
-      <div class="row mt-5">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img
-            src="img/header/slide1.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-
-          <img
-            src="img/header/slide2.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="img/technical/2.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-
-          <img
-            src="img/technical/1.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="img/header/slide3.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-
-          <img
-            src="img/technical/3.webp"
-            class="w-100 shadow-1-strong rounded mb-4 imgModal"
-            alt="Paintball img"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- Testimonials -->
-    <div
-      class="container pb-5 pt-5 position-relative gtco-testimonials"
-      id="testimony"
-    >
-      <h1 class="container__title" data-aos="fade-up">Opiniones</h1>
-      <div class="owl-carousel owl-carousel1 owl-theme">
-        <div>
-          <div class="card text-center">
-            <img
-              class="card-img-top"
-              src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
-              alt=""
-            />
+    <div class="mx-5">
+      <div class="row row-cols-3 row-cols-md-4 g-4 mt-5 justify-content-center">
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
             <div class="card-body">
-              <h5>
-                Ronne Galle <br />
-                <span> Project Manager </span>
-              </h5>
+              <h5 class="card-title">¿De qué edad se puede jugar?</h5>
               <p class="card-text">
-                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat ”
+                Actualmente tenemos dos tipo de marcadora, una
+                que disparan con resorte (bajo impacto) que son
+                para niños de 6 a 12 años, por otra parte tenemos las
+                marcadoras normales de aire comprimido que son
+                para personas de 12 años en adelante
               </p>
             </div>
           </div>
         </div>
-        <div>
-          <div class="card text-center">
-            <img
-              class="card-img-top"
-              src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
-              alt=""
-            />
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
             <div class="card-body">
-              <h5>
-                Missy Limana<br />
-                <span> Engineer </span>
-              </h5>
+              <h5 class="card-title">¿Tiempo que dura el juego?</h5>
               <p class="card-text">
-                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat ”
+                El tiempo de juego dependerá de la cantidad de
+                munición que tenga tu equipo, se juega hasta que
+                todos queden sin paintballs. Siempre se puede
+                extender su tiempo de juego realizando recargas
               </p>
             </div>
           </div>
         </div>
-        <div>
-          <div class="card text-center">
-            <img
-              class="card-img-top"
-              src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302"
-              alt=""
-            />
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
             <div class="card-body">
-              <h5>
-                Martha Brown<br />
-                <span> Project Manager </span>
-              </h5>
+              <h5 class="card-title">¿Se necesita un mínimo de jugadores?</h5>
               <p class="card-text">
-                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat ”
+                Se puede reservar un mínimo de 4 jugadores y un
+                máximo de 30</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">¿Donde están ubicados?</h5>
+              <p class="card-text">
+                Estamos ubicados en Pueblito Peñuelas! en Avenida
+                Los pescadores s/n pasado los estacionamiento
               </p>
             </div>
           </div>
         </div>
-        <div>
-          <div class="card text-center">
-            <img
-              class="card-img-top"
-              src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
-              alt=""
-            />
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
             <div class="card-body">
-              <h5>
-                Hanna Lisem<br />
-                <span> Project Manager </span>
-              </h5>
+              <h5 class="card-title">¿Entregan equipamiento?</h5>
               <p class="card-text">
-                “ Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat ”
+                Entregamos equipamiento completo que consiste en
+                casco, máscara, protección de cuello y pecho, guantes y uniforme militar
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4 col-lg-5 pb-lg-5 col-md-6">
+          <div class="card card-frequent" data-aos="flip-down">
+            <div class="card-body">
+              <h5 class="card-title">¿Se debe agendar?</h5>
+              <p class="card-text">
+                Si!, se debe agendar su visita con al menos un día de
+                anticipación para que no exista cruce de horario con
+                otros grupos asistentes
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
+  </div>
+  <!-- Footer -->
 
   <!-- Section: Links  -->
   <section class="mt-2 border-top">
@@ -498,11 +535,15 @@
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>Redes Sociales
           </h6>
-          <a href="https://www.facebook.com/Paintball-Pueblito-Pe%C3%B1uelas-104118858665819" class="me-4 text-reset socialsLink">
+          <a href="https://www.facebook.com/Paintball-Pueblito-Pe%C3%B1uelas-104118858665819"
+            class="me-4 text-reset socialsLink">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="https://www.instagram.com/paintball.pp/" class="me-4 text-reset socialsLink">
             <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://goo.gl/maps/rqScZxwoPeyp8zmF8" class="me-4 text-reset position-relative w-100 d-block">
+            <img src="img/svg/googlemaps.svg" alt="" srcset="" class="w-50 mt-5 pt-3 position-absolute googleMapsSvg">
           </a>
         </div>
         <!-- Grid column -->
@@ -517,10 +558,10 @@
             <a href="#home" class="text-reset linkFooter">Home</a>
           </p>
           <p>
-            <a href="#technicalInformation" class="text-reset linkFooter">Informacion Tecnica</a>
+            <a href="#technicalInformation" class="text-reset linkFooter">Informacion</a>
           </p>
           <p>
-            <a href="#businessInformation" class="text-reset linkFooter">Informacion de Empresa</a>
+            <a href="#businessInformation" class="text-reset linkFooter">Nosotros</a>
           </p>
           <p>
             <a href="#services" class="text-reset linkFooter">Servicios</a>
@@ -529,7 +570,7 @@
             <a href="#gallery" class="text-reset linkFooter">Galeria</a>
           </p>
           <p>
-            <a href="#testimony" class="text-reset linkFooter">Opiniones</a>
+            <a href="#testimony" class="text-reset linkFooter">Preguntas Frecuentes</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -560,83 +601,69 @@
   </div>
   <!-- Copyright -->
   </footer>
-    <!-- Modal Image -->
-    <div
-        class="modal fade"
-        id="galleryModal"
-        tabindex="-1"
-        aria-labelledby="galleryModal"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body p-0">
-              <img class="modal-img" alt="imagen click"></img>
+  <!-- Modal Image -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img class="modal-img" alt="imagen click"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Form -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-body formModalContainer p-0">
+          <h1 class="formModalTitle">Contactanos</h1>
+          <div id="boxNotifications"></div>
+          <form class="formModal needs-validation" autocomplete="off" novalidate action="./php/sendEmail.php"
+            method="post">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <input type="text" class="form-control" placeholder="Nombre" required id="nameInput" name="nameInput">
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <input type="text" class="form-control" placeholder="Apellidos" required name="lastNameInput">
+              </div>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="inputPhone">Telefono</label>
+              <input type="text" class="form-control" id="inputPhone" aria-describedby="emailHelp"
+                placeholder="Ingresa tu telefono" required name="phoneInput">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Correo</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                placeholder="Ingresa tu correo" required name="emailInput">
+            </div>
+            <div class="form-group">
+              <label for="messageTextArea">Mensaje</label>
+              <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Ingresa tu mensaje." required
+                name="messageInput"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btnFormModal">Enviar</button>
+          </form>
         </div>
       </div>
-    
-      <!-- Modal Form -->
-      <div
-        class="modal fade"
-        id="formModal"
-        tabindex="-1"
-        aria-labelledby="formModal"
-        aria-hidden="true"
-      >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content bg-dark border-0">
-          <div class="modal-body formModalContainer p-0">
-            <h1 class="formModalTitle">Contactanos</h1>
-            <div id="boxNotifications"></div>
-            <form class="formModal needs-validation" autocomplete="off" novalidate action="./php/sendEmail.php" method="post">
-              <div class="row">
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <input type="text" class="form-control" placeholder="Nombre" required id="nameInput" name="nameInput">
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <input type="text" class="form-control" placeholder="Apellidos" required name="lastNameInput">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPhone">Telefono</label>
-                <input type="text" class="form-control" id="inputPhone" aria-describedby="emailHelp" placeholder="Ingresa tu telefono" required name="phoneInput">
-              </div>
-              <div class="form-group">
-                <label for="inputEmail">Correo</label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Ingresa tu correo" required name="emailInput">
-              </div>
-              <div class="form-group">
-                <label for="messageTextArea">Mensaje</label>
-                <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Ingresa tu mensaje." required name="messageInput"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btnFormModal">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      </div>
-    <!-- JQuery-->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Personal Script -->
-    <script src="js/main.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    </div>
+  </div>
+  <!-- JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Personal Script -->
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
