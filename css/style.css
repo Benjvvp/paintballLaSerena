@@ -594,7 +594,7 @@ body{
   height: 2em;
 }
 .carousel-captionFrequent{
-  top: 20%;
+  top: 26%;
   translate: translateX(-50%);
 }
 .carouselItemFrequent div img{
@@ -666,9 +666,9 @@ body{
   }
 }
 @media (max-width: 768px) {
-  .gtco-testimonials {
-    margin-top: 20px;
- }
+  .captionBanner{
+    bottom: 20em;
+  }
   .technicalContainer {
     flex-basis: 100%;
     margin: 2em 0;
@@ -715,8 +715,16 @@ body{
   .card-frequent {
     height: 19em;
   }
+  #home .carousel-item img{
+    max-width: 768px;
+    min-width: 768px;
+
+  }
 }
 @media (max-width: 425px) {
+  .captionBanner{
+    bottom: 15%;
+  }
   .card-business {
     height: 18em;
   }
@@ -747,6 +755,7 @@ body{
     margin-bottom: 1em;
   }
   .carousel-captionFrequent{
+    top: 20% !important;
     font-size: 15px !important;
     text-align: center;
   }

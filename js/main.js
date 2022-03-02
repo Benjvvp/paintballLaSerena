@@ -26,40 +26,6 @@ $(document).ready(function () {
     alert.innerHTML = "Tu mensaje no se a enviado, intenta nuevamente. <button type='button' class='btn-close' data-bs-dismiss='alert'aria-label='Close'></button>";
   }
 });
-// Carousel Testimony
-(function () {
-  "use strict";
-
-  var carousels = function () {
-    $(".owl-carousel1").owlCarousel({
-      loop: true,
-      center: true,
-      margin: 0,
-      responsiveClass: true,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false,
-        },
-        680: {
-          items: 2,
-          nav: false,
-          loop: false,
-        },
-        1000: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
-  };
-
-  (function ($) {
-    carousels();
-  })(jQuery);
-})();
-
 // Modal
 const imgs = document.querySelectorAll(".imgModal");
 imgs.forEach((img) => {
