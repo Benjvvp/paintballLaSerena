@@ -680,8 +680,11 @@ body{
   .technicalInformation__Content {
     justify-content: center !important;
   }
-  .navbar-text{
-    font-size: 1.2em;
+  .nav-link{
+    font-size: 1.5em;
+  }
+  .nav-link.active{
+    font-size: 1.5em;
   }
   .navbar-nav{
       margin: 1.5em 0;
@@ -723,8 +726,20 @@ body{
     min-width: 768px;
 
   }
+  .nav_btn__contact{
+    font-size: 1.5em;
+  }
 }
 @media (max-width: 425px) {
+  .nav-link{
+    font-size: 2em !important;
+  }
+  .nav-link.active{
+    font-size: 2em !important;
+  }
+  .nav_btn__contact{
+    font-size: 2em;
+  }
   .navbar-toggler{
     font-size: 2.2em;
   }
@@ -734,14 +749,8 @@ body{
   .card-business {
     height: 18em;
   }
-  .navbar-collapse.collapsing{
-    margin-top: 3.8em;
-  }
-  .navbar-collapse.show{
-    margin-top: 3.8em;
-  }
   .nav_item_contact{
-    height: 2.5em;
+    height: 4em;
   }
   .formModalTitle{
     font-size: 2em;
@@ -765,8 +774,32 @@ body{
     font-size: 15px !important;
     text-align: center;
   }
+  .card-frequent {
+    height: 25em;
+  }
+  .card-frequent .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .card-frequent .card-body .card-title {
+    height: auto;
+    font-size: 1.5em;
+  }
+  .card-frequent .card-body .card-text {
+    font-size: 1em;
+  }
 }
 @media (max-width: 375px) {
+  .nav-link{
+    font-size: 1.5em !important;
+  }
+  .nav-link.active{
+    font-size: 1.5em !important;
+  }
+  .nav_btn__contact{
+    font-size: 1.5em;
+  }
   .card-business{
     height: 24em !important; 
   }
@@ -779,6 +812,9 @@ body{
   .carousel-captionFrequent{
     font-size: 12px !important;
     text-align: center;
+  }
+  .card-frequent {
+    height: 28em;
   }
 }
 @media (max-width: 320px){
@@ -794,5 +830,8 @@ body{
   .carousel-captionFrequent{
     font-size: 10px !important;
     text-align: center;
+  }
+  .card-frequent{
+    height: 35em;
   }
 }
